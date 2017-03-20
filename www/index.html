@@ -19,7 +19,7 @@
     </head>
     <body>
         <!-- HOME -->
-        <div data-role="page" id="home" >
+        <div data-role="page" id="home">
 
             <!-- panel-home -->
             <div data-role="panel" id="panel-home" data-display="overlay" data-position-fixed="true">
@@ -43,7 +43,30 @@
 
             <div data-role="main" class="ui-content">
               <h3>Welcome to Francavilla </h3>
-              <img src="img/img-home.jpg" alt="home" class="immagine">
+
+              <div class="w3-content w3-section" style="max-width:500px">
+                <img class="mySlides w3-animate-right" src="img/img-home.jpg" style="width:100%">
+                <img class="mySlides w3-animate-right" src="img/img-home.jpg" style="width:100%">
+              </div>
+
+                <!-- script slider -->
+                <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                      x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}
+                    x[myIndex-1].style.display = "block";
+                    setTimeout(carousel, 4500);
+                }
+                </script><!-- script slider -->
+
               <p>Francavilla al Mare è un comune italiano di 25 562 abitanti della provincia di Chieti.
                 Decimo comune d'Abruzzo per numero di abitanti ed importante stazione balneare,
                 è situata a sud di Pescara, con la quale confina e forma un unico agglomerato urbano.
@@ -60,13 +83,20 @@
 
             <!-- footer-home -->
             <div data-role="footer" data-position="fixed" class="ui-bar">
-                <p class="firma icone">&copy; Michele D'Agruma 2017</p>
-              <div class="icone">
-                <a href="https://www.facebook.com/comune.francavillaalmare/" class="ui-btn ui-btn-inline facebook"></a>
-                <a href="https://www.youtube.com/channel/UCOXdOaa3Igww9GDcEWzf6xA" class="ui-btn ui-btn-inline youtube"></a>
-                <a href="https://www.instagram.com/visitfrancavillalmare/?hl=it" class="ui-btn ui-btn-inline instagram"></a>
-                <a href="https://twitter.com/search?f=tweets&vertical=default&q=francavilla%20al%20mare%20&src=typd" class="ui-btn ui-btn-inline twitter"></a>
+              <div class="w3-container w3-padding-0">
+                <div class="w3-left ">
+                  <p class="firma icone">&copy; Michele D'Agruma 2017</p>
+                </div>
+                <div class="w3-right icone">
+
+                    <a href="https://www.facebook.com/comune.francavillaalmare/" class="ui-btn ui-btn-inline facebook"></a>
+                    <a href="https://www.youtube.com/channel/UCOXdOaa3Igww9GDcEWzf6xA" class="ui-btn ui-btn-inline youtube"></a>
+                    <a href="https://www.instagram.com/visitfrancavillalmare/?hl=it" class="ui-btn ui-btn-inline instagram"></a>
+                    <a href="https://twitter.com/search?f=tweets&vertical=default&q=francavilla%20al%20mare%20&src=typd" class="ui-btn ui-btn-inline twitter"></a>
+
+                </div>
               </div>
+
             </div><!-- footer-home -->
 
         </div> <!-- HOME -->
@@ -100,13 +130,18 @@
 
             <!-- footer-laCitta -->
             <div data-role="footer" data-position="fixed" class="ui-bar">
-                <p class="firma icone">&copy; Michele D'Agruma 2017</p>
-              <div class="icone">
-                <a href="https://www.facebook.com/comune.francavillaalmare/" class="ui-btn ui-btn-inline facebook"></a>
-                <a href="https://www.youtube.com/channel/UCOXdOaa3Igww9GDcEWzf6xA" class="ui-btn ui-btn-inline youtube"></a>
-                <a href="https://www.instagram.com/visitfrancavillalmare/?hl=it" class="ui-btn ui-btn-inline instagram"></a>
-                <a href="https://twitter.com/search?f=tweets&vertical=default&q=francavilla%20al%20mare%20&src=typd" class="ui-btn ui-btn-inline twitter"></a>
+              <div class="w3-container w3-padding-0">
+                <div class="w3-left ">
+                  <p class="firma icone">&copy; Michele D'Agruma 2017</p>
+                </div>
+                <div class="w3-right icone">
+                    <a href="https://www.facebook.com/comune.francavillaalmare/" class="ui-btn ui-btn-inline facebook"></a>
+                    <a href="https://www.youtube.com/channel/UCOXdOaa3Igww9GDcEWzf6xA" class="ui-btn ui-btn-inline youtube"></a>
+                    <a href="https://www.instagram.com/visitfrancavillalmare/?hl=it" class="ui-btn ui-btn-inline instagram"></a>
+                    <a href="https://twitter.com/search?f=tweets&vertical=default&q=francavilla%20al%20mare%20&src=typd" class="ui-btn ui-btn-inline twitter"></a>
+                </div>
               </div>
+
             </div><!-- footer-laCitta -->
 
         </div> <!-- LA CITTA' -->
@@ -140,13 +175,18 @@
 
             <!-- footer-itinerari -->
             <div data-role="footer" data-position="fixed" class="ui-bar">
-                <p class="firma icone">&copy; Michele D'Agruma 2017</p>
-              <div class="icone">
-                <a href="https://www.facebook.com/comune.francavillaalmare/" class="ui-btn ui-btn-inline facebook"></a>
-                <a href="https://www.youtube.com/channel/UCOXdOaa3Igww9GDcEWzf6xA" class="ui-btn ui-btn-inline youtube"></a>
-                <a href="https://www.instagram.com/visitfrancavillalmare/?hl=it" class="ui-btn ui-btn-inline instagram"></a>
-                <a href="https://twitter.com/search?f=tweets&vertical=default&q=francavilla%20al%20mare%20&src=typd" class="ui-btn ui-btn-inline twitter"></a>
+              <div class="w3-container w3-padding-0">
+                <div class="w3-left ">
+                  <p class="firma icone">&copy; Michele D'Agruma 2017</p>
+                </div>
+                <div class="w3-right icone">
+                    <a href="https://www.facebook.com/comune.francavillaalmare/" class="ui-btn ui-btn-inline facebook"></a>
+                    <a href="https://www.youtube.com/channel/UCOXdOaa3Igww9GDcEWzf6xA" class="ui-btn ui-btn-inline youtube"></a>
+                    <a href="https://www.instagram.com/visitfrancavillalmare/?hl=it" class="ui-btn ui-btn-inline instagram"></a>
+                    <a href="https://twitter.com/search?f=tweets&vertical=default&q=francavilla%20al%20mare%20&src=typd" class="ui-btn ui-btn-inline twitter"></a>
+                </div>
               </div>
+
             </div><!-- footer-itinerari -->
 
         </div> <!-- ITINERARI -->
@@ -180,13 +220,18 @@
 
             <!-- footer-mappa -->
             <div data-role="footer" data-position="fixed" class="ui-bar">
-                <p class="firma icone">&copy; Michele D'Agruma 2017</p>
-              <div class="icone">
-                <a href="https://www.facebook.com/comune.francavillaalmare/" class="ui-btn ui-btn-inline facebook"></a>
-                <a href="https://www.youtube.com/channel/UCOXdOaa3Igww9GDcEWzf6xA" class="ui-btn ui-btn-inline youtube"></a>
-                <a href="https://www.instagram.com/visitfrancavillalmare/?hl=it" class="ui-btn ui-btn-inline instagram"></a>
-                <a href="https://twitter.com/search?f=tweets&vertical=default&q=francavilla%20al%20mare%20&src=typd" class="ui-btn ui-btn-inline twitter"></a>
+              <div class="w3-container w3-padding-0">
+                <div class="w3-left ">
+                  <p class="firma icone">&copy; Michele D'Agruma 2017</p>
+                </div>
+                <div class="w3-right icone">
+                    <a href="https://www.facebook.com/comune.francavillaalmare/" class="ui-btn ui-btn-inline facebook"></a>
+                    <a href="https://www.youtube.com/channel/UCOXdOaa3Igww9GDcEWzf6xA" class="ui-btn ui-btn-inline youtube"></a>
+                    <a href="https://www.instagram.com/visitfrancavillalmare/?hl=it" class="ui-btn ui-btn-inline instagram"></a>
+                    <a href="https://twitter.com/search?f=tweets&vertical=default&q=francavilla%20al%20mare%20&src=typd" class="ui-btn ui-btn-inline twitter"></a>
+                </div>
               </div>
+
             </div><!-- footer-mappa -->
 
         </div> <!-- MAPPA -->
@@ -216,7 +261,7 @@
 
             <div data-role="main" class="ui-content">
               <div class="w3-third">
-                <div class="w3-card-2">
+                <div class="w3-card-2 w3-animate-zoom">
                   <img src="img/img-home.jpg" style="width:100%">
                   <div class="w3-container">
                     <h4>Lungomare J.F.Kennedy</h4>
@@ -227,7 +272,7 @@
 
             <div data-role="main" class="ui-content">
               <div class="w3-third">
-                <div class="w3-card-2">
+                <div class="w3-card-2 w3-animate-zoom">
                   <img src="img/pontile1.jpg" style="width:100%">
                   <div class="w3-container">
                     <h4>Lungomare J.F.Kennedy</h4>
@@ -238,7 +283,7 @@
 
             <div data-role="main" class="ui-content">
               <div class="w3-third">
-                <div class="w3-card-2">
+                <div class="w3-card-2 w3-animate-zoom">
                   <img src="img/pontile2.jpg" style="width:100%">
                   <div class="w3-container">
                     <h4>Pontile del mare</h4>
@@ -249,7 +294,7 @@
 
             <div data-role="main" class="ui-content">
               <div class="w3-third">
-                <div class="w3-card-2">
+                <div class="w3-card-2 w3-animate-zoom">
                   <img src="img/pontile3.jpg" style="width:100%">
                   <div class="w3-container">
                     <h4>Pontile del mare</h4>
@@ -260,7 +305,7 @@
 
             <div data-role="main" class="ui-content">
               <div class="w3-third">
-                <div class="w3-card-2">
+                <div class="w3-card-2 w3-animate-zoom">
                   <img src="img/pontile4.jpg" style="width:100%">
                   <div class="w3-container">
                     <h4>Pontile del mare</h4>
@@ -271,7 +316,7 @@
 
             <div data-role="main" class="ui-content">
               <div class="w3-third">
-                <div class="w3-card-2">
+                <div class="w3-card-2 w3-animate-zoom">
                   <img src="img/pontile5.jpg" style="width:100%">
                   <div class="w3-container">
                     <h4>Pontile del mare</h4>
@@ -282,7 +327,7 @@
 
             <div data-role="main" class="ui-content">
               <div class="w3-third">
-                <div class="w3-card-2">
+                <div class="w3-card-2 w3-animate-zoom">
                   <img src="img/pontile6.jpg" style="width:100%">
                   <div class="w3-container">
                     <h4>Pontile del mare</h4>
@@ -293,7 +338,7 @@
 
             <div data-role="main" class="ui-content">
               <div class="w3-third">
-                <div class="w3-card-2">
+                <div class="w3-card-2 w3-animate-zoom">
                   <img src="img/mare.jpg" style="width:100%">
                   <div class="w3-container">
                     <h4>Mare</h4>
@@ -304,7 +349,7 @@
 
             <div data-role="main" class="ui-content">
               <div class="w3-third">
-                <div class="w3-card-2">
+                <div class="w3-card-2 w3-animate-zoom">
                   <img src="img/mare2.jpg" style="width:100%">
                   <div class="w3-container">
                     <h4>Mare</h4>
@@ -315,7 +360,7 @@
 
             <div data-role="main" class="ui-content">
               <div class="w3-third">
-                <div class="w3-card-2">
+                <div class="w3-card-2 w3-animate-zoom">
                   <img src="img/palazzo sirena.jpg" style="width:100%">
                   <div class="w3-container">
                     <h4>Palazzo Sirena</h4>
@@ -326,13 +371,18 @@
 
             <!-- footer-gallery -->
             <div data-role="footer" data-position="fixed" class="ui-bar">
-                <p class="firma icone">&copy; Michele D'Agruma 2017</p>
-              <div class="icone">
-                <a href="https://www.facebook.com/comune.francavillaalmare/" class="ui-btn ui-btn-inline facebook"></a>
-                <a href="https://www.youtube.com/channel/UCOXdOaa3Igww9GDcEWzf6xA" class="ui-btn ui-btn-inline youtube"></a>
-                <a href="https://www.instagram.com/visitfrancavillalmare/?hl=it" class="ui-btn ui-btn-inline instagram"></a>
-                <a href="https://twitter.com/search?f=tweets&vertical=default&q=francavilla%20al%20mare%20&src=typd" class="ui-btn ui-btn-inline twitter"></a>
+              <div class="w3-container w3-padding-0">
+                <div class="w3-left ">
+                  <p class="firma icone">&copy; Michele D'Agruma 2017</p>
+                </div>
+                <div class="w3-right icone">
+                    <a href="https://www.facebook.com/comune.francavillaalmare/" class="ui-btn ui-btn-inline facebook"></a>
+                    <a href="https://www.youtube.com/channel/UCOXdOaa3Igww9GDcEWzf6xA" class="ui-btn ui-btn-inline youtube"></a>
+                    <a href="https://www.instagram.com/visitfrancavillalmare/?hl=it" class="ui-btn ui-btn-inline instagram"></a>
+                    <a href="https://twitter.com/search?f=tweets&vertical=default&q=francavilla%20al%20mare%20&src=typd" class="ui-btn ui-btn-inline twitter"></a>
+                </div>
               </div>
+
             </div><!-- footer-gallery -->
 
         </div> <!-- GALLERY -->
@@ -366,13 +416,18 @@
 
             <!-- footer-contatti -->
             <div data-role="footer" data-position="fixed" class="ui-bar">
-                <p class="firma icone">&copy; Michele D'Agruma 2017</p>
-              <div class="icone">
-                <a href="https://www.facebook.com/comune.francavillaalmare/" class="ui-btn ui-btn-inline facebook"></a>
-                <a href="https://www.youtube.com/channel/UCOXdOaa3Igww9GDcEWzf6xA" class="ui-btn ui-btn-inline youtube"></a>
-                <a href="https://www.instagram.com/visitfrancavillalmare/?hl=it" class="ui-btn ui-btn-inline instagram"></a>
-                <a href="https://twitter.com/search?f=tweets&vertical=default&q=francavilla%20al%20mare%20&src=typd" class="ui-btn ui-btn-inline twitter"></a>
+              <div class="w3-container w3-padding-0">
+                <div class="w3-left ">
+                  <p class="firma icone">&copy; Michele D'Agruma 2017</p>
+                </div>
+                <div class="w3-right icone">
+                    <a href="https://www.facebook.com/comune.francavillaalmare/" class="ui-btn ui-btn-inline facebook"></a>
+                    <a href="https://www.youtube.com/channel/UCOXdOaa3Igww9GDcEWzf6xA" class="ui-btn ui-btn-inline youtube"></a>
+                    <a href="https://www.instagram.com/visitfrancavillalmare/?hl=it" class="ui-btn ui-btn-inline instagram"></a>
+                    <a href="https://twitter.com/search?f=tweets&vertical=default&q=francavilla%20al%20mare%20&src=typd" class="ui-btn ui-btn-inline twitter"></a>
+                </div>
               </div>
+
             </div><!-- footer-contatti -->
 
         </div> <!-- CONTATTI -->
@@ -463,13 +518,18 @@
 
             <!-- footer-utility -->
             <div data-role="footer" data-position="fixed" class="ui-bar">
-                <p class="firma icone">&copy; Michele D'Agruma 2017</p>
-              <div class="icone">
-                <a href="https://www.facebook.com/comune.francavillaalmare/" class="ui-btn ui-btn-inline facebook"></a>
-                <a href="https://www.youtube.com/channel/UCOXdOaa3Igww9GDcEWzf6xA" class="ui-btn ui-btn-inline youtube"></a>
-                <a href="https://www.instagram.com/visitfrancavillalmare/?hl=it" class="ui-btn ui-btn-inline instagram"></a>
-                <a href="https://twitter.com/search?f=tweets&vertical=default&q=francavilla%20al%20mare%20&src=typd" class="ui-btn ui-btn-inline twitter"></a>
+              <div class="w3-container w3-padding-0">
+                <div class="w3-left ">
+                  <p class="firma icone">&copy; Michele D'Agruma 2017</p>
+                </div>
+                <div class="w3-right icone">
+                    <a href="https://www.facebook.com/comune.francavillaalmare/" class="ui-btn ui-btn-inline facebook"></a>
+                    <a href="https://www.youtube.com/channel/UCOXdOaa3Igww9GDcEWzf6xA" class="ui-btn ui-btn-inline youtube"></a>
+                    <a href="https://www.instagram.com/visitfrancavillalmare/?hl=it" class="ui-btn ui-btn-inline instagram"></a>
+                    <a href="https://twitter.com/search?f=tweets&vertical=default&q=francavilla%20al%20mare%20&src=typd" class="ui-btn ui-btn-inline twitter"></a>
+                </div>
               </div>
+
             </div><!-- footer-utility -->
           </div>   <!-- UTILITY -->
     </body>
