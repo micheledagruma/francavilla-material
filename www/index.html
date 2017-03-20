@@ -44,7 +44,7 @@
             <div data-role="main" class="ui-content">
               <h3>Welcome to Francavilla </h3>
 
-              <div class="w3-content w3-section" style="max-width:500px">
+              <div class="w3-content w3-section w3-display-container" style="max-width:800px">
                 <img class="mySlides w3-animate-right" src="img/img-home.jpg" style="width:100%">
                 <img class="mySlides w3-animate-right" src="img/img-home.jpg" style="width:100%">
               </div>
@@ -411,7 +411,40 @@
             </div><!-- header-contatti -->
 
             <div data-role="main" class="ui-content">
-                <p>Contatti</p>
+
+              <div class="w3-container">
+                <h2>Contatti utili</h2>
+                <ul class="w3-ul w3-border w3-card-4" >
+                  <li onclick="document.getElementById('modal01').style.display='block'" class="w3-pad">
+                    <img src="img/iat.png" class="w3-left w3-margin-right" style="width:100px" >
+                    <p class="w3-large">IAT</p>
+                    <p>Ufficio informazioni turistiche</p>
+                  </li>
+                  <div id="modal01" class="w3-modal">
+                    <div class="w3-modal-content w3-card-8">
+                      <header class="w3-container w3-teal">
+                        <span onclick="document.getElementById('modal01').style.display='none'"
+                        class="w3-button w3-display-topright">&times;</span>
+                        <h2>Modal Header</h2>
+                      </header>
+                      <div class="w3-container">
+                        <p>Some text..</p>
+                        <p>Some text..</p>
+                      </div>
+                      <footer class="w3-container w3-teal">
+                        <p>Modal Footer</p>
+                      </footer>
+                    </div>
+                  </div>
+                  <li>URP</li>
+                  <li>Farmacie</li>
+                  <li>Contattaci</li>
+                </ul>
+              </div>
+
+
+
+
             </div>
 
             <!-- footer-contatti -->
