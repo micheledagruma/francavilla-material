@@ -14,7 +14,6 @@ $(function(){
        oggetto : $("#oggetto").val(),
        testo : $("#testo").val()
     };
-
       $.ajax({
       url: 'https://francavilla-62b8e.firebaseio.com/contatti.json',
       type: "POST",
