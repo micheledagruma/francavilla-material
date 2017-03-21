@@ -7,22 +7,23 @@ $(function(){
     $(this).find("div[data-role='panel']").panel("close");
   });
   //CHIAMATA CONTATTI
+  //#invia = id del bottone
   $("#invia").click(function(){
     var object = {
-       nome : $("#nome").val(),
-       email : $("#email").val(),
-       oggetto : $("#oggetto").val(),
-       testo : $("#testo").val()
+       nome : $("#nome").val(), //#nome = id input nome
+       email : $("#email").val(), //#nome = id input email
+       oggetto : $("#oggetto").val(), //#nome = id input oggetto
+       testo : $("#testo").val() //#nome = id input testo
     };
       $.ajax({
       url: 'https://francavilla-62b8e.firebaseio.com/contatti.json',
       type: "POST",
       dataType: 'json',
-      data: JSON.stringify(object)
-      }).done(function (data){
+      data: JSON.stringify(object) //trasforma object in json
+    }).done(function (data){ //se tutto ok
         alert("Email inviata");
       })
-      .fail(function(){
+      .fail(function(){ // se c'è stato un problema
         alert("Errore!");
       });
     });
