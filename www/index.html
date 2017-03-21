@@ -415,40 +415,134 @@
               <div class="w3-container">
                 <h2>Contatti utili</h2>
                 <ul class="w3-ul w3-border w3-card-4" >
+                  <!--COMUNE-->
+                  <li onclick="document.getElementById('modal00').style.display='block'" class="w3-pad">
+                    <img src="img/logo-comune.png" class="w3-left w3-margin-right" style="width:50px; height:50px;" >
+                    <p class="w3-large">Comune</p>
+                    <p>Info comune</p>
+                  </li>
+                  <div id="modal00" class="w3-modal w3-animate-zoom">
+                    <div class="w3-modal-content w3-card-8">
+                      <header class="w3-container w3-theme-l1">
+                        <span onclick="document.getElementById('modal00').style.display='none'"
+                        class="w3-button w3-display-topright w3-white w3-theme-l1">&times;</span>
+                        <h2>Informazioni sul comune</h2>
+                      </header>
+                      <div class="w3-container">
+                        <p><strong>Indirizzo:</strong> Corso Roma, 7, 66023 Francavilla al Mare CH</p>
+                        <p><strong>Telefono:</strong> 085 49201</p>
+                        <p><strong>Sito web:</strong> <a href="http://www.comune.francavilla.ch.it/">comune.francavilla.ch.it</a></p>
+                      </div>
+                    </div>
+                  </div><!--COMUNE-->
+
+                  <!-- IAT -->
                   <li onclick="document.getElementById('modal01').style.display='block'" class="w3-pad">
-                    <img src="img/iat.png" class="w3-left w3-margin-right" style="width:100px" >
+                    <img src="img/iat.png" class="w3-left w3-margin-right" style="width:100px; height:50px;" >
                     <p class="w3-large">IAT</p>
                     <p>Ufficio informazioni turistiche</p>
                   </li>
-                  <div id="modal01" class="w3-modal">
+                  <div id="modal01" class="w3-modal w3-animate-zoom">
                     <div class="w3-modal-content w3-card-8">
-                      <header class="w3-container w3-teal">
+                      <header class="w3-container w3-theme-l1">
                         <span onclick="document.getElementById('modal01').style.display='none'"
-                        class="w3-button w3-display-topright">&times;</span>
-                        <h2>Modal Header</h2>
+                        class="w3-button w3-display-topright w3-white w3-theme-l1">&times;</span>
+                        <h2>IAT Abruzzo promozione turismo</h2>
                       </header>
                       <div class="w3-container">
-                        <p>Some text..</p>
-                        <p>Some text..</p>
+                        <p><strong>Indirizzo:</strong> Piazza Sirena, 66023 Francavilla al Mare CH</p>
+                        <p><strong>Telefono:</strong> 085 817169</p>
+                        <p><strong>Provincia:</strong> Provincia di Chieti</p>
                       </div>
-                      <footer class="w3-container w3-teal">
-                        <p>Modal Footer</p>
-                      </footer>
+                    </div>
+                  </div><!-- IAT -->
+                  <!-- URP -->
+                  <li onclick="document.getElementById('modal02').style.display='block'" class="w3-pad">
+                    <img src="img/urp.png" class="w3-left w3-margin-right" style="width:100px; height:50px;" >
+                    <p class="w3-large">URP</p>
+                    <p>Segnalazioni telematiche</p>
+                  </li>
+                  <div id="modal02" class="w3-modal w3-animate-zoom">
+                    <div class="w3-modal-content w3-card-8">
+                      <header class="w3-container w3-theme-l1">
+                        <span onclick="document.getElementById('modal02').style.display='none'"
+                        class="w3-button w3-display-topright w3-white w3-theme-l1">&times;</span>
+                        <h2>eURP</h2>
+                      </header>
+                      <div class="w3-container">
+                        <p><a href="http://www.comune.francavilla.ch.it/eurp/pagina20_mappa-segnalazioni.html">Segnala al comune tramite l' urp telematico</a></p>
+                      </div>
+                    </div>
+                  </div><!-- URP -->
+                  <!-- FARMACIE -->
+                  <li onclick="document.getElementById('modal03').style.display='block'" class="w3-pad">
+                    <img src="img/farmacia.jpg" class="w3-left w3-margin-right" style="width:50px; height:50px;"  >
+                    <p class="w3-large">Farmacie</p>
+                    <div>
+                      <p>Informazioni farmacie</p>
+                    </div>
+                  </li>
+                  <div id="modal03" class="w3-modal w3-animate-zoom">
+                    <div class="w3-modal-content w3-card-8">
+                      <header class="w3-container w3-theme-l1">
+                        <span onclick="document.getElementById('modal03').style.display='none'"
+                        class="w3-button w3-display-topright w3-white w3-theme-l1">&times;</span>
+                        <h2>Farmacie</h2>
+                      </header>
+                      <div class="w3-container">
+                        <p><strong>Sito web:</strong><a href="https://francavilla-al-mare.virgilio.it/pubblicautilita/FARMACIE.html">farmacie di turno</a></p>
+                      </div>
+                    </div>
+                  </div><!-- FARMACIE -->
+
+                  <!-- CONTATTACI -->
+                  <li onclick="document.getElementById('modal04').style.display='block'" class="w3-pad">
+                    <img src="img/contattaci2.png" class="w3-left w3-margin-right" style="width:50px; height:50px;" >
+                    <p class="w3-large">Contattaci</p>
+                    <p>Contatta il comune</p>
+                  </li>
+                  <div id="modal04" class="w3-modal w3-animate-zoom">
+                    <div class="w3-modal-content w3-card-8">
+                      <header class="w3-container w3-theme-l1">
+                        <span onclick="document.getElementById('modal04').style.display='none'"
+                        class="w3-button w3-display-topright w3-white w3-theme-l1">&times;</span>
+                        <h2>Contattaci</h2>
+                      </header>
+                      <div class="w3-container">
+                        <img src="img/contattaci2.png" style="width:100px; height:90px;" class="w3-margin-top">
+                        <p>Inviaci una mail con le tue richieste e segnalazioni.</p>
+                        <form action="#" class="w3-container">
+                          <p>
+
+
+                          <label for="nome" class="w3-label w3-validate w3-text-theme">Nome</label>
+                          <input class="w3-input" type="text" name="nome" required>
+                          </p>
+                          <p>
+                          <label for="email" class="w3-label w3-validate w3-text-theme">Email</label>
+                          <input class="w3-input" type="email" name="email" required>
+                          </p>
+                          <p>
+                          <label for="oggetto" class="w3-label w3-validate w3-text-theme">Oggetto</label>
+                          <input class="w3-input" type="text" name="oggetto" required>
+                          </p>
+                          <p>
+                          <label for="testo" class="w3-label w3-validate w3-text-theme">Testo</label>
+                          <input class="w3-input" type="text" name="testo" required>
+                          </p>
+                          <p><button class="w3-btn w3-theme-l1">Invia</button></p>
+                        </form>
+                      </div>
                     </div>
                   </div>
-                  <li>URP</li>
-                  <li>Farmacie</li>
-                  <li>Contattaci</li>
+
+                  <!-- CONTATTACI -->
                 </ul>
               </div>
-
-
-
-
             </div>
 
             <!-- footer-contatti -->
-            <div data-role="footer" data-position="fixed" class="ui-bar">
+            <div data-role="footer" class="ui-bar">
               <div class="w3-container w3-padding-0">
                 <div class="w3-left ">
                   <p class="firma icone">&copy; Michele D'Agruma 2017</p>
