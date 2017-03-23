@@ -15,6 +15,10 @@
         <param name="ios-package" value="CDVGestureHandler" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="SplashScreen">
+        <param name="ios-package" value="CDVSplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
     <name>visit francavilla material</name>
     <description>
         App turistica di francavilla
@@ -46,8 +50,8 @@
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
     <preference name="Orientation" value="portrait" />
-    <feature name="SplashScreen">
-        <param name="ios-package" value="CDVSplashScreen" />
-        <param name="onload" value="true" />
-    </feature>
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="10000" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="SplashShowOnlyFirstTime" value="true" />
 </widget>
