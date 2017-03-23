@@ -8,10 +8,10 @@
         <link href="js/libs/jquery-mobile/jquery.mobile.icons.min.css" rel="stylesheet" type="text/css"/>
         <link href="js/libs/jquery-mobile/jquery.mobile.theme.min.css" rel="stylesheet" type="text/css"/>
         <link href="js/libs/jquery-mobile/jquery.mobile.min.css" rel="stylesheet" type="text/css"/>
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+        <link href="style/w3.css" rel="stylesheet">
         <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="mystyle.css" rel="stylesheet" type="text/css"/>
+        <link href="style/mystyle.css" rel="stylesheet">
         <script src="js/libs/jquery/jquery.min.js" type="text/javascript"></script>
         <script src="js/libs/jquery-mobile/jquery.mobile.min.js" type="text/javascript"></script>
         <script src="js/index.js"></script>
@@ -268,102 +268,84 @@
             <!-- header-gallery -->
             <div data-role="header" data-position="fixed">
                 <a href="#panel-gallery" data-transition="slidefade" class="w3-button"><i class="w3-large fa fa-bars"></i></a>
-                <h1>Header gallery</h1>
+                <h1>Gallery</h1>
             </div><!-- header-gallery -->
 
             <div data-role="main" class="ui-content">
-              <div class="w3-third">
+              <div class="w3-third w3-margin-bottom">
                 <div class="w3-card-2 w3-animate-zoom">
                   <img src="img/img-home.jpg" style="width:100%" onclick="onClick(this)">
                   <div class="w3-container">
-                    <h4>Lungomare J.F.Kennedy</h4>
+                    <p>Lungomare J.F.Kennedy</p>
                   </div>
                 </div>
               </div>
 
-              <div class="w3-third">
+              <div class="w3-third w3-margin-bottom">
                 <div class="w3-card-2 w3-animate-zoom">
                   <img src="img/pontile1.jpg" style="width:100%" onclick="onClick(this)">
                   <div class="w3-container">
-                    <h4>Lungomare J.F.Kennedy</h4>
+                    <p>Lungomare J.F.Kennedy</p>
                   </div>
                 </div>
               </div>
 
-              <div class="w3-third">
+              <div class="w3-third w3-margin-bottom">
                 <div class="w3-card-2 w3-animate-zoom">
                   <img src="img/pontile2.jpg" style="width:100%" onclick="onClick(this)">
                   <div class="w3-container">
-                    <h4>Pontile del mare</h4>
+                    <p>Pontile del mare</p>
                   </div>
                 </div>
               </div>
 
-              <div class="w3-third">
+              <div class="w3-third w3-margin-bottom">
                 <div class="w3-card-2 w3-animate-zoom">
                   <img src="img/pontile3.jpg" style="width:100%" onclick="onClick(this)">
                   <div class="w3-container">
-                    <h4>Pontile del mare</h4>
+                    <p>Pontile del mare</p>
                   </div>
                 </div>
               </div>
 
-              <div class="w3-third">
+              <div class="w3-third w3-margin-bottom">
                 <div class="w3-card-2 w3-animate-zoom">
                   <img src="img/pontile4.jpg" style="width:100%" onclick="onClick(this)">
                   <div class="w3-container">
-                    <h4>Pontile del mare</h4>
+                    <p>Pontile del mare</p>
                   </div>
                 </div>
               </div>
 
-              <div class="w3-third">
-                <div class="w3-card-2 w3-animate-zoom">
-                  <img src="img/pontile5.jpg" style="width:100%" onclick="onClick(this)">
-                  <div class="w3-container">
-                    <h4>Pontile del mare</h4>
-                  </div>
-                </div>
-              </div>
-
-              <div class="w3-third">
+              <div class="w3-third w3-margin-bottom">
                 <div class="w3-card-2 w3-animate-zoom">
                   <img src="img/pontile6.jpg" style="width:100%" onclick="onClick(this)">
                   <div class="w3-container">
-                    <h4>Pontile del mare</h4>
+                    <p>Pontile del mare</p>
                   </div>
                 </div>
               </div>
 
-              <div class="w3-third">
-                <div class="w3-card-2 w3-animate-zoom">
-                  <img src="img/mare.jpg" style="width:100%" onclick="onClick(this)">
-                  <div class="w3-container">
-                    <h4>Mare</h4>
-                  </div>
-                </div>
-              </div>
-
-              <div class="w3-third">
+              <div class="w3-third w3-margin-bottom">
                 <div class="w3-card-2 w3-animate-zoom">
                   <img src="img/mare2.jpg" style="width:100%" onclick="onClick(this)">
                   <div class="w3-container">
-                    <h4>Mare</h4>
+                    <p>Mare</p>
                   </div>
                 </div>
               </div>
 
-              <div class="w3-third">
+              <div class="w3-third w3-margin-bottom">
                 <div class="w3-card-2 w3-animate-zoom">
                   <img src="img/palazzo sirena.jpg" style="width:100%" onclick="onClick(this)">
                   <div class="w3-container">
-                    <h4>Palazzo Sirena</h4>
+                    <p>Palazzo Sirena</p>
                   </div>
                 </div>
               </div>
             </div>
             <!-- POPUP MODAL -->
-            <div id="modal0" class="w3-modal" onclick="this.style.display='none'">
+            <div id="modal0" class="w3-modal" onclick="this.style.display='none'" style="padding-top:50%">
                 <div class="w3-modal-content w3-animate-zoom">
                   <img id="img01" style="width:100%">
                 </div>
@@ -376,18 +358,17 @@
               }
               </script><!-- POPUP MODAL -->
 
-
             <!-- footer-gallery -->
             <div data-role="footer" data-position="fixed" class="ui-bar" data-tap-toggle="false">
               <div class="w3-container w3-padding-0">
                 <div class="w3-left ">
                   <p class="firma icone">&copy; Michele D'Agruma 2017</p>
                 </div>
-                <div class="w3-right icone">
-                    <a href="https://www.facebook.com/comune.francavillaalmare/" class="ui-btn ui-btn-inline facebook"></a>
-                    <a href="https://www.youtube.com/channel/UCOXdOaa3Igww9GDcEWzf6xA" class="ui-btn ui-btn-inline youtube"></a>
-                    <a href="https://www.instagram.com/visitfrancavillalmare/?hl=it" class="ui-btn ui-btn-inline instagram"></a>
-                    <a href="https://twitter.com/search?f=tweets&vertical=default&q=francavilla%20al%20mare%20&src=typd" class="ui-btn ui-btn-inline twitter"></a>
+                <div class="w3-right ">
+                    <a href="https://www.facebook.com/comune.francavillaalmare/" class="ui-btn ui-btn-inline facebook icone"></a>
+                    <a href="https://www.youtube.com/channel/UCOXdOaa3Igww9GDcEWzf6xA" class="ui-btn ui-btn-inline youtube icone"></a>
+                    <a href="https://www.instagram.com/visitfrancavillalmare/?hl=it" class="ui-btn ui-btn-inline instagram icone"></a>
+                    <a href="https://twitter.com/search?f=tweets&vertical=default&q=francavilla%20al%20mare%20&src=typd" class="ui-btn ui-btn-inline twitter icone"></a>
                 </div>
               </div>
 
