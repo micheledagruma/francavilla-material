@@ -27,4 +27,25 @@ $(function(){
         alert("Errore!");
       });
     });
+    //chiese
+    $("#chiese").on('click', function() {
+      $("#main-laCitta").empty();
+      $.ajax("https://francavilla-62b8e.firebaseio.com/luoghi/chiese.json")
+      .done(function(chiese){
+        console.log(chiese);
+        $.map(chiese, function(riga, indice) {
+          var htmlPagina = "<div class='w3-container'>";
+              htmlPagina += "<h1>"+riga.nome+"</h1>";
+              htmlPagina += "<h1>"+riga.immagine+"</h1>";
+              htmlPagina += "<p>"+riga.descrizione+"</p>";
+              htmlPagina += "<div>"+riga.coordinate+"</div>";
+              htmlPagina += "</div>";
+              $('#main-laCitta').append(htmlPagina);
+        })
+      })
+      .fail(function(){
+        alert("Errore! Prova a ricaricare la pagina...");
+      });
+    });
+
 });
