@@ -6,6 +6,7 @@ $(function(){
   $("div[data-role='page']").on("swipeleft", function(event) {
     $(this).find("div[data-role='panel']").panel("close");
   });
+  
   //CHIAMATA CONTATTI
   //#invia = id del bottone
   $("#invia").click(function(){

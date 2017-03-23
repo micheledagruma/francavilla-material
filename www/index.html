@@ -14,7 +14,6 @@
         <link href="mystyle.css" rel="stylesheet" type="text/css"/>
         <script src="js/libs/jquery/jquery.min.js" type="text/javascript"></script>
         <script src="js/libs/jquery-mobile/jquery.mobile.min.js" type="text/javascript"></script>
-        <script src="cordova.js"></script>
         <script src="js/index.js"></script>
     </head>
     <body>
@@ -280,121 +279,103 @@
                     <h4>Lungomare J.F.Kennedy</h4>
                   </div>
                 </div>
-                <!-- POPUP MODAL -->
-                <div id="modal0" class="w3-modal" onclick="this.style.display='none'">
-                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-                    <div class="w3-modal-content w3-animate-zoom">
-                      <img id="img01" style="width:100%">
-                    </div>
-                </div>
-
-                  <script>
-                  function onClick(element) {
-                    document.getElementById("img01").src = element.src;
-                    document.getElementById("modal0").style.display = "block";
-                  }
-                  </script><!-- POPUP MODAL -->
               </div>
-            </div>
 
-            <div data-role="main" class="ui-content">
               <div class="w3-third">
                 <div class="w3-card-2 w3-animate-zoom">
-                  <img src="img/pontile1.jpg" style="width:100%">
+                  <img src="img/pontile1.jpg" style="width:100%" onclick="onClick(this)">
                   <div class="w3-container">
                     <h4>Lungomare J.F.Kennedy</h4>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div data-role="main" class="ui-content">
               <div class="w3-third">
                 <div class="w3-card-2 w3-animate-zoom">
-                  <img src="img/pontile2.jpg" style="width:100%">
+                  <img src="img/pontile2.jpg" style="width:100%" onclick="onClick(this)">
                   <div class="w3-container">
                     <h4>Pontile del mare</h4>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div data-role="main" class="ui-content">
               <div class="w3-third">
                 <div class="w3-card-2 w3-animate-zoom">
-                  <img src="img/pontile3.jpg" style="width:100%">
+                  <img src="img/pontile3.jpg" style="width:100%" onclick="onClick(this)">
                   <div class="w3-container">
                     <h4>Pontile del mare</h4>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div data-role="main" class="ui-content">
               <div class="w3-third">
                 <div class="w3-card-2 w3-animate-zoom">
-                  <img src="img/pontile4.jpg" style="width:100%">
+                  <img src="img/pontile4.jpg" style="width:100%" onclick="onClick(this)">
                   <div class="w3-container">
                     <h4>Pontile del mare</h4>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div data-role="main" class="ui-content">
               <div class="w3-third">
                 <div class="w3-card-2 w3-animate-zoom">
-                  <img src="img/pontile5.jpg" style="width:100%">
+                  <img src="img/pontile5.jpg" style="width:100%" onclick="onClick(this)">
                   <div class="w3-container">
                     <h4>Pontile del mare</h4>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div data-role="main" class="ui-content">
               <div class="w3-third">
                 <div class="w3-card-2 w3-animate-zoom">
-                  <img src="img/pontile6.jpg" style="width:100%">
+                  <img src="img/pontile6.jpg" style="width:100%" onclick="onClick(this)">
                   <div class="w3-container">
                     <h4>Pontile del mare</h4>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div data-role="main" class="ui-content">
               <div class="w3-third">
                 <div class="w3-card-2 w3-animate-zoom">
-                  <img src="img/mare.jpg" style="width:100%">
+                  <img src="img/mare.jpg" style="width:100%" onclick="onClick(this)">
                   <div class="w3-container">
                     <h4>Mare</h4>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div data-role="main" class="ui-content">
               <div class="w3-third">
                 <div class="w3-card-2 w3-animate-zoom">
-                  <img src="img/mare2.jpg" style="width:100%">
+                  <img src="img/mare2.jpg" style="width:100%" onclick="onClick(this)">
                   <div class="w3-container">
                     <h4>Mare</h4>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div data-role="main" class="ui-content">
               <div class="w3-third">
                 <div class="w3-card-2 w3-animate-zoom">
-                  <img src="img/palazzo sirena.jpg" style="width:100%">
+                  <img src="img/palazzo sirena.jpg" style="width:100%" onclick="onClick(this)">
                   <div class="w3-container">
                     <h4>Palazzo Sirena</h4>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- POPUP MODAL -->
+            <div id="modal0" class="w3-modal" onclick="this.style.display='none'">
+                <div class="w3-modal-content w3-animate-zoom">
+                  <img id="img01" style="width:100%">
+                </div>
+            </div>
+
+              <script>
+              function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal0").style.display = "block";
+              }
+              </script><!-- POPUP MODAL -->
+
 
             <!-- footer-gallery -->
             <div data-role="footer" data-position="fixed" class="ui-bar" data-tap-toggle="false">
