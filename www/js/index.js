@@ -6,7 +6,7 @@ $(function(){
   $("div[data-role='page']").on("swipeleft", function(event) {
     $(this).find("div[data-role='panel']").panel("close");
   });
-  
+
   //CHIAMATA CONTATTI
   //#invia = id del bottone
   $("#invia").click(function(){
@@ -22,15 +22,17 @@ $(function(){
       dataType: 'json',
       data: JSON.stringify(object) //trasforma object in json
     }).done(function (data){ //se tutto ok
-        alert("Email inviata");
+        alert("Email inviata con successo!");
       })
       .fail(function(){ // se c'è stato un problema
         alert("Errore!");
       });
     });
+
+
     //chiese
-    $("#chiese").on('click', function() {
-      $("#main-laCitta").empty();
+    $("#chiese").on('pagecreate', function() {
+      $("#main-chiese").empty();
       $.ajax("https://francavilla-62b8e.firebaseio.com/luoghi/chiese.json")
       .done(function(chiese){
         console.log(chiese);
@@ -41,7 +43,7 @@ $(function(){
               htmlPagina += "<p>"+riga.descrizione+"</p>";
               htmlPagina += "<div>"+riga.coordinate+"</div>";
               htmlPagina += "</div>";
-              $('#main-laCitta').append(htmlPagina);
+              $('#main-chiese').append(htmlPagina);
         })
       })
       .fail(function(){
