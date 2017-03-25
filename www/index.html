@@ -125,18 +125,58 @@
             </div><!-- header-laCitta -->
 
             <div id="main-laCitta" data-role="main" class="ui-content">
-              <div  class="w3-container">
-                <a href="#chiese">Chiese</a>
-              </div>
-              <div  class="w3-container">
-                <a href="#cultura">Cultura</a>
-              </div>
-              <div  class="w3-container">
-                <a href="#enogastronomia">enogastronomia</a>
-              </div>
-              <div  class="w3-container">
-                <a href="#monumenti">Monumenti</a>
-              </div>
+              <!-- CHIESE -->
+              <div class="w3-section">
+                <a href="#chiese" style="text-decoration: none;">
+                  <div class="w3-card-4">
+                    <img src="img/chiesa.jpg" alt="chiesa" style="width:100%">
+                    <div class="w3-container w3-white">
+                      <h3>Chiese</h3>
+                      <p>Visita i luoghi di culto della città</p>
+                    </div>
+                  </div>
+                </a>
+              </div><!-- CHIESE -->
+
+              <!-- MONUMENTI -->
+              <div class="w3-section">
+                <a href="#monumenti" style="text-decoration: none;">
+                  <div class="w3-card-4">
+                    <img src="img/monumenti.jpg" alt="monumenti" style="width:100%">
+                    <div class="w3-container w3-white">
+                      <h3>Monumenti</h3>
+                      <p>Scopri i monumenti della città</p>
+                    </div>
+                  </div>
+                </a>
+              </div><!-- MONUMENTI -->
+
+              <!-- ENOGASTRONOMIA -->
+              <div class="w3-section">
+                <a href="#enogastronomia" style="text-decoration: none;">
+                  <div class="w3-card-4">
+                    <img src="img/enogastronomia.jpg" alt="enogastronomia" style="width:100%">
+                    <div class="w3-container w3-white">
+                      <h3>Enogastronomia</h3>
+                      <p>Scopri i migliori ristoranti della città</p>
+                    </div>
+                  </div>
+                </a>
+              </div><!-- ENOGASTRONOMIA -->
+
+              <!-- CULTURA -->
+              <div class="w3-section">
+                <a href="#cultura" style="text-decoration: none;">
+                  <div class="w3-card-4">
+                    <img src="img/cultura.jpg" alt="cultura" style="width:100%; max-hei">
+                    <div class="w3-container w3-white">
+                      <h3>Cultura</h3>
+                      <p>Visita i musei e i luoghi di cultura</p>
+                    </div>
+                  </div>
+                </a>
+              </div><!-- CULTURA -->
+
             </div>
 
             <!-- footer-laCitta -->
@@ -178,21 +218,11 @@
             <div data-role="header">
                 <a href="#panel-chiese" data-transition="slidefade" class="w3-button"><i class="w3-large material-icons">menu</i></a>
                 <h1>Chiese</h1>
+                <a href="#" class="w3-button" data-rel="back"><i class="w3-large material-icons">arrow_back</i></a>
+
             </div><!-- header-chiese -->
 
             <div id="main-chiese" data-role="main" class="ui-content">
-              <div  class="w3-container">
-                <p>chiese</p>
-              </div>
-              <div  class="w3-container">
-                <p>cultura</p>
-              </div>
-              <div  class="w3-container">
-                <p>monumenti</p>
-              </div>
-              <div  class="w3-container" style="color:red">
-                <p>gastronomia</p>
-              </div>
 
 
             </div>
@@ -237,6 +267,7 @@
             <div data-role="header">
                 <a href="#panel-cultura" data-transition="slidefade" class="w3-button"><i class="w3-large material-icons">menu</i></a>
                 <h1>Cultura</h1>
+                <a href="#" class="w3-button" data-rel="back"><i class="w3-large material-icons">arrow_back</i></a>
             </div><!-- header-cultura -->
 
             <div id="main-cultura" data-role="main" class="ui-content">
@@ -281,6 +312,7 @@
             <!-- panel-enogastronomia -->
             <div data-role="panel" id="panel-enogastronomia" data-display="overlay" data-position-fixed="true">
                 <h2>Menu</h2>
+
                 <ul data-role="listview">
                     <li><a href="#home" data-transition="slidefade">Home</a></li>
                     <li><a href="#laCitta" data-transition="slidefade">La città</a></li>
@@ -296,6 +328,7 @@
             <div data-role="header">
                 <a href="#panel-enogastronomia" data-transition="slidefade" class="w3-button"><i class="w3-large material-icons">menu</i></a>
                 <h1>Enogastronomia</h1>
+                <a href="#" class="w3-button" data-rel="back"><i class="w3-large material-icons">arrow_back</i></a>
             </div><!-- header-enogastronomia -->
 
             <div id="main-enogastronomia" data-role="main" class="ui-content">
@@ -354,6 +387,7 @@
             <div data-role="header">
                 <a href="#panel-monumenti" data-transition="slidefade" class="w3-button"><i class="w3-large material-icons">menu</i></a>
                 <h1>Monumenti</h1>
+                <a href="#" class="w3-button" data-rel="back"><i class="w3-large material-icons">arrow_back</i></a>
             </div><!-- header-monumenti -->
 
             <div id="main-monumenti" data-role="main" class="ui-content">
@@ -407,15 +441,60 @@
             </div><!-- panel-itinerari -->
 
             <!-- header-itinerari -->
-            <div data-role="header">
+            <div data-role="header"  class="w3-card-4 w3-theme" style="border:20px;">
                 <a href="#panel-itinerari" data-transition="slidefade" class="w3-button"><i class="w3-large material-icons">menu</i></a>
                 <h1>Itinerari di viaggio</h1>
             </div><!-- header-itinerari -->
 
             <div data-role="main" class="ui-content">
-                <p>Itinerari di viaggio</p>
-            </div>
 
+
+              <div class="w3-section">
+                <div class="w3-card-4">
+                  <img src="img/chiesa.jpg" alt="chiesa" style="width:100%">
+                  <div class="w3-container w3-center">
+                    <h4>Cultura</h4>
+                    <p>Visita i musei e i luoghi di cultura</p>
+                  </div>
+                  <a href="#" class="w3-bar-item w3-button w3-block">Vai alla mappa</a>
+                </div>
+              </div>
+
+              <div class="w3-section">
+                <div class="w3-card-4">
+                  <img src="img/chiesa.jpg" alt="chiesa" style="width:100%">
+                  <div class="w3-container w3-center">
+                    <h4>Cultura</h4>
+                    <p>Visita i musei e i luoghi di cultura</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w3-section">
+                <div class="w3-card-4">
+                  <img src="img/chiesa.jpg" alt="chiesa" style="width:100%">
+                  <div class="w3-container w3-center">
+                    <h4>Cultura</h4>
+                    <p>Visita i musei e i luoghi di cultura</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w3-section">
+                <div class="w3-card-4">
+                  <img src="img/chiesa.jpg" alt="chiesa" style="width:100%">
+                  <div class="w3-container w3-center">
+                    <h4>Cultura</h4>
+                    <p>Visita i musei e i luoghi di cultura</p>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+            </div>
             <!-- footer-itinerari -->
             <div data-role="footer" class="ui-bar" data-tap-toggle="false">
               <div class="w3-container w3-padding-0">

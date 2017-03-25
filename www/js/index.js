@@ -37,12 +37,18 @@ $(function(){
       $.ajax("https://francavilla-62b8e.firebaseio.com/luoghi/chiese.json")
       .done(function(chiese){
         $.map(chiese, function(riga, indice) {
-          var htmlPagina = "<div class='w3-container'>";
-              htmlPagina += "<h1>"+riga.nome+"</h1>";
-              htmlPagina += "<img src="+riga.immagine+">";
-              htmlPagina += "<p>"+riga.descrizione+"</p>";
-              htmlPagina += "<a href="+riga.coordinate+">mappa</a>";
-              htmlPagina += "</div>";
+          var htmlPagina =  '<div class="w3-container">';
+              htmlPagina +=   '<div class="w3-section">';
+              htmlPagina +=     '<div class="w3-card-4">';
+              htmlPagina +=       '<img src='+riga.immagine+' alt="chiesa" style="width:100%">';
+              htmlPagina +=       '<div class="w3-container w3-center">';
+              htmlPagina +=         '<h4>'+riga.nome+'</h4>';
+              htmlPagina +=         '<p>'+riga.descrizione+'</p>';
+              htmlPagina +=       '</div>';
+              htmlPagina +=       '<a href='+riga.coordinate+' class="w3-bar-item w3-button w3-block">Vai alla mappa</a>';
+              htmlPagina +=     '</div>';
+              htmlPagina +=   '</div>';
+              htmlPagina += '</div>';
               $('#main-chiese').append(htmlPagina);
         })
       })
@@ -58,12 +64,18 @@ $(function(){
       $.ajax("https://francavilla-62b8e.firebaseio.com/luoghi/cultura.json")
       .done(function(cultura){
         $.map(cultura, function(riga, indice) {
-          var htmlPagina = "<div class='w3-container'>";
-              htmlPagina += "<h1>"+riga.nome+"</h1>";
-              htmlPagina += "<img src="+riga.immagine+">";
-              htmlPagina += "<p>"+riga.descrizione+"</p>";
-              htmlPagina += "<a href="+riga.coordinate+">mappa</a>";
-              htmlPagina += "</div>";
+          var htmlPagina =  '<div class="w3-container">';
+              htmlPagina +=   '<div class="w3-section">';
+              htmlPagina +=     '<div class="w3-card-4">';
+              htmlPagina +=       '<img src='+riga.immagine+' alt="chiesa" style="width:100%">';
+              htmlPagina +=       '<div class="w3-container w3-center">';
+              htmlPagina +=         '<h4>'+riga.nome+'</h4>';
+              htmlPagina +=         '<p>'+riga.descrizione+'</p>';
+              htmlPagina +=       '</div>';
+              htmlPagina +=       '<a href='+riga.coordinate+' class="w3-bar-item w3-button w3-block">Vai alla mappa</a>';
+              htmlPagina +=     '</div>';
+              htmlPagina +=   '</div>';
+              htmlPagina += '</div>';
               $('#main-cultura').append(htmlPagina);
         })
       })
@@ -78,13 +90,19 @@ $(function(){
       $.ajax("https://francavilla-62b8e.firebaseio.com/luoghi/enogastronomia.json")
       .done(function(enogastronomia){
         $.map(enogastronomia, function(riga, indice) {
-          var htmlPagina = "<div class='w3-container'>";
-              htmlPagina += "<h1>"+riga.nome+"</h1>";
-              htmlPagina += "<img src="+riga.immagine+">";
-              htmlPagina += "<p>"+riga.indirizzo+"</p>";
-              htmlPagina += "<a href="+riga.coordinate+">mappa</a>";
-              htmlPagina += "</div>";
-              $('#main-enogastronomia').append(htmlPagina);
+              var htmlPagina =  '<div class="w3-container">';
+                  htmlPagina +=   '<div class="w3-section">';
+                  htmlPagina +=     '<div class="w3-card-4">';
+                  htmlPagina +=       '<img src='+riga.immagine+' alt="monumento" style="width:100%">';
+                  htmlPagina +=       '<div class="w3-container w3-center">';
+                  htmlPagina +=         '<h4>'+riga.nome+'</h4>';
+                  htmlPagina +=         '<p>'+riga.indirizzo+'</p>';
+                  htmlPagina +=       '</div>';
+                  htmlPagina +=       '<a href='+riga.coordinate+' class="w3-bar-item w3-button w3-block">Vai alla mappa</a>';
+                  htmlPagina +=     '</div>';
+                  htmlPagina +=   '</div>';
+                  htmlPagina += '</div>';
+                  $('#main-enogastronomia').append(htmlPagina);
         })
       })
       .fail(function(){
@@ -98,13 +116,19 @@ $(function(){
       $.ajax("https://francavilla-62b8e.firebaseio.com/luoghi/monumenti.json")
       .done(function(monumenti){
         $.map(monumenti, function(riga, indice) {
-          var htmlPagina = "<div class='w3-container'>";
-              htmlPagina += "<h1>"+riga.nome+"</h1>";
-              htmlPagina += "<h1>"+riga.immagine+"</h1>";
-              htmlPagina += "<p>"+riga.descrizione+"</p>";
-              htmlPagina += "<div>"+riga.coordinate+"</div>";
-              htmlPagina += "</div>";
-              $('#main-monumenti').append(htmlPagina);
+              var htmlPagina =  '<div class="w3-container">';
+                  htmlPagina +=   '<div class="w3-section">';
+                  htmlPagina +=     '<div class="w3-card-4">';
+                  htmlPagina +=       '<img src='+riga.immagine+' alt="monumento" style="width:100%">';
+                  htmlPagina +=       '<div class="w3-container w3-center">';
+                  htmlPagina +=         '<h4>'+riga.nome+'</h4>';
+                  htmlPagina +=         '<p>'+riga.descrizione+'</p>';
+                  htmlPagina +=       '</div>';
+                  htmlPagina +=       '<a href='+riga.coordinate+' class="w3-bar-item w3-button w3-block">Vai alla mappa</a>';
+                  htmlPagina +=     '</div>';
+                  htmlPagina +=   '</div>';
+                  htmlPagina += '</div>';
+                  $('#main-monumenti').append(htmlPagina);
         })
       })
       .fail(function(){
