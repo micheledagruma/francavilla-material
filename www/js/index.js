@@ -1,3 +1,5 @@
+$("li").removeClass("ui-btn-icon-right");
+
 /* ---------- SWIPE PANEL ----------*/
 $(function(){
   $("div[data-role='page']").on("swiperight", function(event) {

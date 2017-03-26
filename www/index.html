@@ -18,7 +18,7 @@
         <link href="style/mystyle.css" rel="stylesheet">
 
     </head>
-    <body>
+      <body>
         <!-- HOME -->
         <div data-role="page" id="home">
 
@@ -26,47 +26,62 @@
             <div data-role="panel" id="panel-home" data-display="overlay" data-position-fixed="true">
                 <h2>Menu</h2>
                 <ul data-role="listview" class="w3-ul">
-                    <li><a href="#home" data-transition="slidefade"><i class="material-icons">home</i>Home</a></li>
-                    <li><a href="#laCitta" data-transition="slidefade"><i class="material-icons">location_city</i>La città</a></li>
-                    <li><a href="#itinerari" data-transition="slidefade"><i class="material-icons">panorama</i>Itinerari di viaggio</a></li>
-                    <li><a href="#mappa" data-transition="slidefade"><i class="material-icons">place</i>Mappa</a></li>
-                    <li><a href="#gallery" data-transition="slidefade"><i class="material-icons">camera_alt</i>Gallery</a></li>
-                    <li><a href="#contatti" data-transition="slidefade"><i class="material-icons">folder_shared</i>Contatti</a></li>
-                    <li><a href="#utility" data-transition="slidefade"><i class="material-icons">directions_run</i>Come arrivare</a></li>
+                    <li data-icon="false"><a href="#home" data-transition="slidefade"><i class="material-icons">home</i>Home</a></li>
+                    <li data-icon="false"><a href="#laCitta" data-transition="slidefade"><i class="material-icons">location_city</i>La città</a></li>
+                    <li data-icon="false"><a href="#itinerari" data-transition="slidefade"><i class="material-icons">panorama</i>Itinerari di viaggio</a></li>
+                    <li data-icon="false"><a href="#mappa" data-transition="slidefade"><i class="material-icons">place</i>Mappa</a></li>
+                    <li data-icon="false"><a href="#gallery" data-transition="slidefade"><i class="material-icons">camera_alt</i>Gallery</a></li>
+                    <li data-icon="false"><a href="#contatti" data-transition="slidefade"><i class="material-icons">folder_shared</i>Contatti</a></li>
+                    <li data-icon="false"><a href="#utility" data-transition="slidefade"><i class="material-icons">directions_run</i>Come arrivare</a></li>
                 </ul>
-                
-            </div><!-- panel-home -->
 
+            </div><!-- panel-home -->
             <!-- header-home -->
-            <div data-role="header" class="w3-theme w3-border-0 w3-card-4">
+          <!--  <div data-role="header" class="w3-theme w3-border-0 w3-card-4">
                 <a href="#panel-home" data-transition="slidefade" class="w3-button w3-theme"><i class="w3-large w3-theme material-icons">menu</i></a>
                 <h1>Home</h1>
-            </div><!-- header-home -->
 
-            <div data-role="main" class="ui-content ">
-              <h3>Welcome to Francavilla </h3>
+            </div>-->  <!-- header-home -->
 
-              <div class="w3-content w3-section w3-display-container" style="width:100% !important; margin-left:-20px;">
-                <img class="mySlides w3-animate-right" src="img/img-home.jpg" style="width:100%">
-                <img class="mySlides w3-animate-right" src="img/mare2.jpg" style="width:100%">
-                <img class="mySlides w3-animate-right" src="img/pontile1.jpg" style="width:100%">
+          <!--  <div class="w3-top">
+              <div class="w3-bar">
+                <a class="w3-bar-item w3-button w3-hover-black w3-left" href="#panel-home" data-transition="slidefade">
+                  <i class="w3-large material-icons" style="color:white">menu</i>
+                </a>
               </div>
+            </div>-->
 
-                <!-- script slider -->
-              <!-- script slider -->
+            <header class="w3-display-container w3-content w3-center w3-card-4" style="max-width:1500px">
+              <img class="w3-image" src="img/mare2.jpg" alt="mare" width="1500" height="600">
+              <a class="w3-bar-item w3-button w3-left w3-display-topleft" href="#panel-home" data-transition="slidefade">
+                <i class="w3-large material-icons" style="color:white">menu</i>
+              </a>
+              <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
 
-              <p>Francavilla al Mare è un comune italiano di 25 562 abitanti della provincia di Chieti.
-                Decimo comune d'Abruzzo per numero di abitanti ed importante stazione balneare,
-                è situata a sud di Pescara, con la quale confina e forma un unico agglomerato urbano.
-                Fa parte della conurbazione centro-abruzzese che supera i 350 000 abitanti
-                (oltre 530 000 nell'area metropolitana) in un territorio ad alta densità abitativa.
-                <br>Si estende su un territorio basso collinare e costiero, e questa conformazione
-                territoriale consente la presenza di diversi punti panoramici, da cui poter osservare
-                la cittadina e la costa, da cui comincia verso sud la cosiddetta Costa dei Trabocchi.
-                <br>La città possiede un ricco passato, come testimoniano i ritrovamenti archeologici risalenti al
-                periodo preistorico e protostorico, italico, frentano e romano; inoltre fu, dal 1281, sede di un
-                porto e dal 1307 di una importante fiera. Nel 2014 la città venne premiata con la Bandiera blù.
-              </p>
+                <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">WELCOME TO FRANCAVILLA</h1>
+                <h5 class="w3-hide-large" style="white-space:nowrap">CITTA DI ARTE E CULTURA</h5>
+              </div>
+            </header>
+
+
+            <div data-role="main">
+
+              <div class="w3-container">
+
+
+                <p>Francavilla al Mare è un comune italiano di 25 562 abitanti della provincia di Chieti.
+                  Decimo comune d'Abruzzo per numero di abitanti ed importante stazione balneare,
+                  è situata a sud di Pescara, con la quale confina e forma un unico agglomerato urbano.
+                  Fa parte della conurbazione centro-abruzzese che supera i 350 000 abitanti
+                  (oltre 530 000 nell'area metropolitana) in un territorio ad alta densità abitativa.
+                  <br>Si estende su un territorio basso collinare e costiero, e questa conformazione
+                  territoriale consente la presenza di diversi punti panoramici, da cui poter osservare
+                  la cittadina e la costa, da cui comincia verso sud la cosiddetta Costa dei Trabocchi.
+                  <br>La città possiede un ricco passato, come testimoniano i ritrovamenti archeologici risalenti al
+                  periodo preistorico e protostorico, italico, frentano e romano; inoltre fu, dal 1281, sede di un
+                  porto e dal 1307 di una importante fiera. Nel 2014 la città venne premiata con la Bandiera blù.
+                </p>
+              </div>  
             </div>
 
             <!-- footer-home -->
@@ -96,13 +111,13 @@
             <div data-role="panel" id="panel-laCitta" data-display="overlay" data-position-fixed="true">
                 <h2>Menu</h2>
                 <ul data-role="listview" class="w3-ul">
-                    <li><a href="#home" data-transition="slidefade"><i class="material-icons">home</i>Home</a></li>
-                    <li><a href="#laCitta" data-transition="slidefade"><i class="material-icons">location_city</i>La città</a></li>
-                    <li><a href="#itinerari" data-transition="slidefade"><i class="material-icons">panorama</i>Itinerari di viaggio</a></li>
-                    <li><a href="#mappa" data-transition="slidefade"><i class="material-icons">place</i>Mappa</a></li>
-                    <li><a href="#gallery" data-transition="slidefade"><i class="material-icons">camera_alt</i>Gallery</a></li>
-                    <li><a href="#contatti" data-transition="slidefade"><i class="material-icons">folder_shared</i>Contatti</a></li>
-                    <li><a href="#utility" data-transition="slidefade"><i class="material-icons">directions_run</i>Come arrivare</a></li>
+                    <li data-icon="false"><a href="#home" data-transition="slidefade"><i class="material-icons">home</i>Home</a></li>
+                    <li data-icon="false"><a href="#laCitta" data-transition="slidefade"><i class="material-icons">location_city</i>La città</a></li>
+                    <li data-icon="false"><a href="#itinerari" data-transition="slidefade"><i class="material-icons">panorama</i>Itinerari di viaggio</a></li>
+                    <li data-icon="false"><a href="#mappa" data-transition="slidefade"><i class="material-icons">place</i>Mappa</a></li>
+                    <li data-icon="false"><a href="#gallery" data-transition="slidefade"><i class="material-icons">camera_alt</i>Gallery</a></li>
+                    <li data-icon="false"><a href="#contatti" data-transition="slidefade"><i class="material-icons">folder_shared</i>Contatti</a></li>
+                    <li data-icon="false"><a href="#utility" data-transition="slidefade"><i class="material-icons">directions_run</i>Come arrivare</a></li>
                 </ul>
             </div><!-- panel-laCitta -->
 
