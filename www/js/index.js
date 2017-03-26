@@ -5,7 +5,9 @@ $(function(){
   });
   $("div[data-role='page']").on("swipeleft", function(event) {
     $(this).find("div[data-role='panel']").panel("close");
-  });/* ---------- FORM CONTATTI DINAMICO ----------*/
+  });
+
+  /* ---------- FORM CONTATTI DINAMICO ----------*/
 
   /* ---------- SWIPE PANEL ----------*/
 
