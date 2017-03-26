@@ -1,4 +1,3 @@
-$("li").removeClass("ui-btn-icon-right");
 
 /* ---------- SWIPE PANEL ----------*/
 $(function(){
@@ -8,9 +7,6 @@ $(function(){
   $("div[data-role='page']").on("swipeleft", function(event) {
     $(this).find("div[data-role='panel']").panel("close");
   });
-
-  /* ---------- FORM CONTATTI DINAMICO ----------*/
-
   /* ---------- SWIPE PANEL ----------*/
 
   /* ---------- FORM CONTATTI DINAMICO ----------*/
@@ -41,20 +37,32 @@ $(function(){
       $.ajax("https://francavilla-62b8e.firebaseio.com/luoghi/chiese.json")
       .done(function(chiese){
         $.map(chiese, function(riga, indice) {
-          var htmlPagina =  '<div class="w3-container">';
-              htmlPagina +=   '<div class="w3-section">';
-              htmlPagina +=     '<div class="w3-card-4">';
-              htmlPagina +=       '<img src='+riga.immagine+' alt="chiesa" style="width:100%">';
-              htmlPagina +=       '<div class="w3-container w3-center">';
-              htmlPagina +=         '<h4>'+riga.nome+'</h4>';
-              htmlPagina +=         '<p>'+riga.descrizione+'</p>';
-              htmlPagina +=       '</div>';
-              htmlPagina +=       '<a href='+riga.coordinate+' class="w3-bar-item w3-button w3-block">Vai alla mappa</a>';
-              htmlPagina +=     '</div>';
-              htmlPagina +=   '</div>';
-              htmlPagina += '</div>';
-              $('#main-chiese').append(htmlPagina);
-        })
+              var htmlPagina =  '<div class="w3-container">';
+                  htmlPagina +=   '<div class="w3-section">';
+                  htmlPagina +=     '<div class="w3-card-4">';
+                  htmlPagina +=       '<img src='+riga.immagine+' alt="chiesa" style="width:100%">';
+                  htmlPagina +=       '<div  class="w3-container w3-center">';
+                  htmlPagina +=         '<a href="#" data-id='+indice+'><i class="material-icons w3-right preferiti" style="font-size:48px;">favorite_border</i></a>';
+                  htmlPagina +=         '<h4>'+riga.nome+'</h4>';
+                  htmlPagina +=         '<p>'+riga.descrizione+'</p>';
+                  htmlPagina +=       '</div>';
+                  htmlPagina +=       '<a href='+riga.coordinate+' class="w3-bar-item w3-button w3-block">Vai alla mappa</a>';
+                  htmlPagina +=     '</div>';
+                  htmlPagina +=   '</div>';
+                  htmlPagina += '</div>';
+                  $('#main-chiese').append(htmlPagina);
+        });
+        $(".preferiti").click(function(){
+          var id = $(this).parent("a").attr("data-id");
+          console.log(id);
+          if(localStorage.getItem(id) != 1){
+            $(this).text("favorite");
+            localStorage.setItem(id,1);
+          }else{
+            $(this).text("favorite_border");
+            localStorage.setItem(id,0);
+        }
+        });
       })
       .fail(function(){
         alert("Errore! Prova a ricaricare la pagina...");
@@ -73,6 +81,7 @@ $(function(){
               htmlPagina +=     '<div class="w3-card-4">';
               htmlPagina +=       '<img src='+riga.immagine+' alt="chiesa" style="width:100%">';
               htmlPagina +=       '<div class="w3-container w3-center">';
+              htmlPagina +=         '<a href="#" data-id='+indice+'><i class="material-icons w3-right preferiti" style="font-size:48px;">favorite_border</i></a>';
               htmlPagina +=         '<h4>'+riga.nome+'</h4>';
               htmlPagina +=         '<p>'+riga.descrizione+'</p>';
               htmlPagina +=       '</div>';
@@ -81,7 +90,18 @@ $(function(){
               htmlPagina +=   '</div>';
               htmlPagina += '</div>';
               $('#main-cultura').append(htmlPagina);
-        })
+        });
+        $(".preferiti").click(function(){
+          var id = $(this).parent("a").attr("data-id");
+          console.log(id);
+          if(localStorage.getItem(id) != 1){
+            $(this).text("favorite");
+            localStorage.setItem(id,1);
+          }else{
+            $(this).text("favorite_border");
+            localStorage.setItem(id,0);
+        }
+        });
       })
       .fail(function(){
         alert("Errore! Prova a ricaricare la pagina...");
@@ -99,6 +119,7 @@ $(function(){
                   htmlPagina +=     '<div class="w3-card-4">';
                   htmlPagina +=       '<img src='+riga.immagine+' alt="monumento" style="width:100%">';
                   htmlPagina +=       '<div class="w3-container w3-center">';
+                  htmlPagina +=         '<a href="#" data-id='+indice+'><i class="material-icons w3-right preferiti" style="font-size:48px;">favorite_border</i></a>';
                   htmlPagina +=         '<h4>'+riga.nome+'</h4>';
                   htmlPagina +=         '<p>'+riga.indirizzo+'</p>';
                   htmlPagina +=       '</div>';
@@ -107,7 +128,18 @@ $(function(){
                   htmlPagina +=   '</div>';
                   htmlPagina += '</div>';
                   $('#main-enogastronomia').append(htmlPagina);
-        })
+        });
+        $(".preferiti").click(function(){
+          var id = $(this).parent("a").attr("data-id");
+          console.log(id);
+          if(localStorage.getItem(id) != 1){
+            $(this).text("favorite");
+            localStorage.setItem(id,1);
+          }else{
+            $(this).text("favorite_border");
+            localStorage.setItem(id,0);
+        }
+        });
       })
       .fail(function(){
         alert("Errore! Prova a ricaricare la pagina...");
@@ -125,6 +157,7 @@ $(function(){
                   htmlPagina +=     '<div class="w3-card-4">';
                   htmlPagina +=       '<img src='+riga.immagine+' alt="monumento" style="width:100%">';
                   htmlPagina +=       '<div class="w3-container w3-center">';
+                  htmlPagina +=         '<a href="#" data-id='+indice+'><i class="material-icons w3-right preferiti" style="font-size:48px;">favorite_border</i></a>';
                   htmlPagina +=         '<h4>'+riga.nome+'</h4>';
                   htmlPagina +=         '<p>'+riga.descrizione+'</p>';
                   htmlPagina +=       '</div>';
@@ -133,11 +166,71 @@ $(function(){
                   htmlPagina +=   '</div>';
                   htmlPagina += '</div>';
                   $('#main-monumenti').append(htmlPagina);
-        })
+        });
+        $(".preferiti").click(function(){
+          var id = $(this).parent("a").attr("data-id");
+          console.log(id);
+          if(localStorage.getItem(id) != 1){
+            $(this).text("favorite");
+            localStorage.setItem(id,1);
+          }else{
+            $(this).text("favorite_border");
+            localStorage.setItem(id,0);
+        }
+        });
       })
       .fail(function(){
         alert("Errore! Prova a ricaricare la pagina...");
       });
     });/* ---------- PAGINA MONUMENTI DINAMICA ----------*/
+
+
+
+
+    /* ---------- PAGINA preferiti DINAMICA ----------*/
+    $("#preferiti").on('pageshow', function() {
+      $("#main-preferiti").empty();
+      $.ajax("https://francavilla-62b8e.firebaseio.com/luoghi.json")
+      .done(function(data){//cicla i luoghi
+        $("#main-preferiti").empty();
+        $.map(data, function(value, index) {
+          console.log(index);
+          $.map(index,function(riga,indice){
+            if(index == "enogastronomia"){
+              var htmlPagina =  '<div class="w3-container">';
+                  htmlPagina +=   '<div class="w3-section">';
+                  htmlPagina +=     '<div class="w3-card-4">';
+                  htmlPagina +=       '<img src='+riga.immagine+' alt="monumento" style="width:100%">';
+                  htmlPagina +=       '<div class="w3-container w3-center">';
+                  htmlPagina +=         '<h4>'+riga.nome+'</h4>';
+                  htmlPagina +=         '<p>'+riga.indirizzo+'</p>';
+                  htmlPagina +=       '</div>';
+                  htmlPagina +=       '<a href='+riga.coordinate+' class="w3-bar-item w3-button w3-block">Vai alla mappa</a>';
+                  htmlPagina +=     '</div>';
+                  htmlPagina +=   '</div>';
+                  htmlPagina += '</div>';
+                  $('#main-preferiti').append(htmlPagina);
+            }else{
+              var htmlPagina =  '<div class="w3-container">';
+                  htmlPagina +=   '<div class="w3-section">';
+                  htmlPagina +=     '<div class="w3-card-4">';
+                  htmlPagina +=       '<img src='+riga.immagine+' alt="monumento" style="width:100%">';
+                  htmlPagina +=       '<div class="w3-container w3-center">';
+                  htmlPagina +=         '<h4>'+riga.nome+'</h4>';
+                  htmlPagina +=         '<p>'+riga.descrizione+'</p>';
+                  htmlPagina +=       '</div>';
+                  htmlPagina +=       '<a href='+riga.coordinate+' class="w3-bar-item w3-button w3-block">Vai alla mappa</a>';
+                  htmlPagina +=     '</div>';
+                  htmlPagina +=   '</div>';
+                  htmlPagina += '</div>';
+                  $('#main-preferiti').append(htmlPagina);
+            }
+                });
+        });
+      })
+      .fail(function(){
+        alert("Errore! Prova a ricaricare la pagina...");
+      });
+    });/* ---------- PAGINA preferiti DINAMICA ----------*/
 
 });
