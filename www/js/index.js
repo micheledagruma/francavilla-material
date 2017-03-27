@@ -225,7 +225,7 @@ $(function(){
     });/* ---------- PAGINA CHIESE DINAMICA ----------*/
 
 
-    /* ---------- PAGINA preferiti DINAMICA ----------*/
+    /* ---------- PAGINA preferiti DINAMICA
     $("#preferiti").on('pageshow', function() {
       //$("#main-preferiti").empty();
       $.ajax("https://francavilla-62b8e.firebaseio.com/luoghi.json")
@@ -269,6 +269,6 @@ $(function(){
       .fail(function(){
         alert("Errore! Prova a ricaricare la pagina...");
       });
-    });/* ---------- PAGINA preferiti DINAMICA ----------*/
+    }); PAGINA preferiti DINAMICA ----------*/
 
 });
